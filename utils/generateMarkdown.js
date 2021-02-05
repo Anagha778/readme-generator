@@ -40,43 +40,43 @@ const renderLicenseLink = license => {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
-    if (license === null)
+if (license === null)
     {
       return ``;
     }
-    else
-    {
-    return `* This application is covered under license ${license}
-  * Here is the link detailing license terms and conditions ${renderLicenseLink(license)}`;
-    }
-  };
+else
+{
+return `* This application is covered under license ${license}
+* Here is the link detailing license terms and conditions ${renderLicenseLink(license)}`;
+}
+};
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = data => {
-    return `# ${data.pname} ![Github license](${renderLicenseBadge(data.plicense)})
-    ## Description
-    ${data.pdescription}
-    ## Table of Contents:
-    * [Installation](#Installation)
-    * [Usage](#Usage)
-    * [License](#License)
-    * [Contributor](#Contributors)
-    * [Tests](#Tests)
-    * [Questions](#Questions)
-    ## Installation:
-    Install dependency using command : ${data.pdependency}
-    ## Usage:
-    ${data.pusage}
-    ## License:
-    ${renderLicenseSection(data.plicense)}
-    ## Contributors:
-    ${data.pcontributor}
-    ## Tests:
-    ${data.ptest}
-    ## Questions:
-    * Link to my GitHub profile : https://github.com/${data.username}  
-    * For additional questions reach me at : ${data.eaddress}
-    `;
+return `# ${data.pname} ![Github license](${renderLicenseBadge(data.plicense)})
+## Description
+${data.pdescription}
+## Table of Contents:
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributor](#Contributors)
+* [Tests](#Tests)
+* [Questions](#Questions)
+## Installation:
+Install dependency using command : ${data.pdependency}
+## Usage:
+${data.pusage}
+## License:
+${renderLicenseSection(data.plicense)}
+## Contributors:
+${data.pcontributor}
+## Tests:
+${data.ptest}
+## Questions:
+* Link to my GitHub profile : https://github.com/${data.username}  
+* For additional questions reach me at : ${data.eaddress}
+`;
 }
 
 module.exports = generateMarkdown;
