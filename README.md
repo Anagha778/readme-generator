@@ -18,7 +18,7 @@ You can quickly and easily generate a README file by using a command-line applic
  * Make sure that your repo includes a package.json with the required dependencies. You can create one by running npm init when you first set up the project, before installing any dependencies.
  * Use command npm i inquirer to install inquirer package.
  * Application can be invoked using command : node index.js
- * Readme file will be generated in dist folder, be sure to create dist folder at the root of project directory.
+ * Readme file will be generated in dist folder, which will be created at the root of the project directory, if it doesn't already exist.
 
  ## User Story
  AS A developer

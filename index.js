@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require("inquirer");
+const dir = './dist';
 const filepath = './dist/readme.md';
 const generatePage = require('./utils/generateMarkdown');
 
@@ -71,12 +72,12 @@ const questions = [
     {
         type: 'input',
         name: 'pcontributor',
-        message: 'Please provide Contributor Covenant Code of Conduct: '
+        message: 'Please provide name of project Contributors: '
     },
     {
         type: 'input',
         name: 'ptest',
-        message: 'Please provide tests executed for this project as part of testing: '
+        message: 'Please provide command to execute tests for this project as part of testing: '
     },
     {
         type: 'list',
@@ -112,6 +113,10 @@ const writeToFile = (fileName, data) =>
 
 // TODO: Create a function to initialize app
 const init = ()=> {
+  if (!fs.existsSync(dir))
+  {
+    fs.mkdirSync(dir);
+  }
     return inquirer.prompt(questions);
 };
 
@@ -122,6 +127,12 @@ init()
 })
 .then(pageReadme => {
     return writeToFile(filepath,pageReadme);
+})
+.then(writemsg =>{
+    console.log('');
+    console.log("------------------------------------------------------------------------------");
+    console.log('Readme generated at location '+filepath+' at root of the project directory');
+    console.log("------------------------------------------------------------------------------");
 })
 .catch(err => {
     console.log(err);
