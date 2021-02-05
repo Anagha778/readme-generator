@@ -1,6 +1,6 @@
-# Readme Generator ![Github license](https://shields.io/badge/license-Apache-blue.svg)
+# asd ![Github license](https://shields.io/badge/license-Unlicense-blue.svg)
 ## Description
-Generates readme
+asd
 ## Table of Contents:
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -9,16 +9,16 @@ Generates readme
 * [Tests](#Tests)
 * [Questions](#Questions)
 ## Installation:
-Install dependency using command : npm i inquirer
+Install dependency using command : asd
 ## Usage:
-usage1
+asd
 ## License:
-* This application is covered under license Apache
-* Here is the link detailing license terms and conditions https://choosealicense.com/licenses/apache-2.0/
+* This application is covered under license Unlicense
+* Here is the link detailing license terms and conditions https://choosealicense.com/licenses/unlicense/
 ## Contributors:
-j
+asd
 ## Tests:
-test
+asd
 ## Questions:
-* Link to my GitHub profile : https://github.com/anagha778  
-* For additional questions reach me at : anagha778@gmail.com
+* Link to my GitHub profile : https://github.com/sfsf  
+* For additional questions reach me at : asdas
