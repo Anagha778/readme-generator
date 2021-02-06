@@ -15,9 +15,9 @@ You can quickly and easily generate a README file by using a command-line applic
 
  ## Pre-requisites for project
  * Be sure to include node_modules/ and .DS_Store/ to .gitignore file, so that your node_modules directory isn't tracked or uploaded to GitHub.
- * Make sure that your repo includes a package.json with the required dependencies. You can create one by running npm init when you first set up the project, before installing any dependencies.
+ * Make sure project directory includes a package.json with the required dependencies. You can create one by running npm init when you first set up the project, before installing any dependencies.
  * Use command npm i inquirer to install inquirer package.
- * once instalation is done, application can be invoked using command : node index.js
+ * once installation is done, application can be invoked using command : node index.js
  * Readme file will be generated in dist folder, which will be created at the root of the project directory, if it doesn't already exist.
 
  ## User Story
@@ -46,7 +46,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Mock Image
 <div>
-    <img src="./images/app.PNG" width="400px"/> 
+    <img src="./images/app.png" width="400px"/> 
 </div>
 
 ## Built With
