@@ -44,6 +44,8 @@ THEN I am taken to the corresponding section of the README
 
 ## Video link
 
+[Application walkthrough video link](./images/Readme-Generator.mp4)
+
 ## Mock Image
 <div>
     <img src="./images/app.png" width="400px"/> 
